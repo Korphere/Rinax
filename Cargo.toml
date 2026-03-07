@@ -16,7 +16,7 @@ eula = false
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
 chrono = "0.4" # 削除時刻を記録する場合
-cargo-dist = "0.31.0"
+cargo-dist = "0.28.0"
 
 [[bin]]
 name = "rm"  # これで生成されるバイナリが rm.exe になる
