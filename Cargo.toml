@@ -1,0 +1,18 @@
+[package]
+name = "rms"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+chrono = "0.4" # 削除時刻を記録する場合
+cargo-dist = "0.31.0"
+
+[[bin]]
+name = "rm"  # これで生成されるバイナリが rm.exe になる
+path = "src/main.rs"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
