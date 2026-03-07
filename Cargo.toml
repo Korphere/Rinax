@@ -2,6 +2,16 @@
 name = "rms"
 version = "0.1.0"
 edition = "2024"
+repository = "https://github.com/Korphere/Rinax"
+authors = ["KoHaRxnP"]
+description = "Rinax: A modern gaming-focused utility"
+homepage = "https://github.com/Korphere/Rinax"
+
+[package.metadata.wix]
+upgrade-guid = "7E186B6A-9D5D-4EF2-8E2B-08C40F3C8207"
+path-guid = "B56FB1C1-E162-41FC-8A22-21214F73F2E7"
+license = false
+eula = false
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
