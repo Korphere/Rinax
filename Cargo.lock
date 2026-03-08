@@ -2399,6 +2399,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "rinax"
+version = "0.1.1"
+dependencies = [
+ "cargo-dist",
+ "chrono",
+ "clap",
+]
+
+[[package]]
 name = "ring"
 version = "0.17.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2410,15 +2419,6 @@ dependencies = [
  "libc",
  "untrusted",
  "windows-sys 0.52.0",
-]
-
-[[package]]
-name = "rms"
-version = "0.1.0"
-dependencies = [
- "cargo-dist",
- "chrono",
- "clap",
 ]
 
 [[package]]

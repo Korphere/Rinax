@@ -1,6 +1,6 @@
 [package]
-name = "rms"
-version = "0.1.0"
+name = "rinax"
+version = "0.1.1"
 edition = "2024"
 repository = "https://github.com/Korphere/Rinax"
 authors = ["KoHaRxnP"]
@@ -14,6 +14,10 @@ path = "src/bin/rms.rs"
 [[bin]]
 name = "mvs"
 path = "src/bin/mvs.rs"
+
+[[bin]]
+name = "cps"
+path = "src/bin/cps.rs"
 
 [package.metadata.wix]
 upgrade-guid = "7E186B6A-9D5D-4EF2-8E2B-08C40F3C8207"

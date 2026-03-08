@@ -60,7 +60,7 @@ fn main() -> io::Result<()> {
     }
 
     match fs::rename(&args.source, &final_dest) {
-        Ok(_) => println!("✅ Move completed successfully"),
+        Ok(_) => println!("✅ Copy completed successfully"),
         Err(e) if e.kind() == io::ErrorKind::CrossesDevices => {
             match fs::copy(&args.source, &final_dest) {
                 Ok(_) => {},
@@ -69,8 +69,7 @@ fn main() -> io::Result<()> {
                     return Ok(());
                 }
             };
-            fs::remove_file(&args.source)?;
-            println!("✅ Move completed (Cross-device)");
+            println!("✅ Copy completed (Cross-device)");
         }
         Err(e) => eprintln!("❌ Error: {}", e),
     }
