@@ -8,11 +8,11 @@ description = "Rinax: A modern gaming-focused utility"
 homepage = "https://github.com/Korphere/Rinax"
 
 [[bin]]
-name = "rm"
+name = "rms"
 path = "src/bin/rms.rs"
 
 [[bin]]
-name = "mv"
+name = "mvs"
 path = "src/bin/mvs.rs"
 
 [package.metadata.wix]
