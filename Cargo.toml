@@ -7,6 +7,14 @@ authors = ["KoHaRxnP"]
 description = "Rinax: A modern gaming-focused utility"
 homepage = "https://github.com/Korphere/Rinax"
 
+[[bin]]
+name = "rm"
+path = "src/bin/rms.rs"
+
+[[bin]]
+name = "mv"
+path = "src/bin/mvs.rs"
+
 [package.metadata.wix]
 upgrade-guid = "7E186B6A-9D5D-4EF2-8E2B-08C40F3C8207"
 path-guid = "B56FB1C1-E162-41FC-8A22-21214F73F2E7"
@@ -15,12 +23,8 @@ eula = false
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
-chrono = "0.4" # 削除時刻を記録する場合
+chrono = "0.4" 
 cargo-dist = "0.31.0"
-
-[[bin]]
-name = "rm"  # これで生成されるバイナリが rm.exe になる
-path = "src/main.rs"
 
 # The profile that 'dist' will build with
 [profile.dist]

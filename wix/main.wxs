@@ -131,14 +131,6 @@
                         <Component Id='binary1' Guid='*'>
                             <File
                                 Id='exe1'
-                                Name='rm.exe'
-                                DiskId='1'
-                                Source='$(var.CargoTargetBinDir)\rm.exe'
-                                KeyPath='yes'/>
-                        </Component>
-                        <Component Id='binary2' Guid='*'>
-                            <File
-                                Id='exe2'
                                 Name='rms.exe'
                                 DiskId='1'
                                 Source='$(var.CargoTargetBinDir)\rms.exe'
@@ -167,7 +159,6 @@
 
             <ComponentRef Id='binary0'/>
             <ComponentRef Id='binary1'/>
-            <ComponentRef Id='binary2'/>
 
             <Feature
                 Id='Environment'
